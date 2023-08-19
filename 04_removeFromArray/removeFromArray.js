@@ -1,7 +1,7 @@
-let removeFromArray = function (array, ...elements) {
-  for (let i = 0; i < elements.length; i++) {
+let removeFromArray = function (array, ...args) {
+  for (let i = 0; i < args.length; i++) {
     for (let j = 0; j < array.length; j++) {
-      if (elements[i] === array[j]) {
+      if (args[i] === array[j]) {
         array.splice(j, 1);
       }
     }
