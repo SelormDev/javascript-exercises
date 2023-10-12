@@ -2,9 +2,17 @@ const add = function (num1, num2) {
   return num1 + num2;
 };
 
-const subtract = function () {};
+const subtract = function (num1, num2) {
+  return num1 > num2 ? num1 - num2 : num2 - num1;
+};
 
-const sum = function () {};
+const sum = function (array) {
+  let sum = 0;
+  array.forEach((element) => {
+    sum += element;
+  });
+  return sum;
+};
 
 const multiply = function () {};
 
