@@ -14,11 +14,26 @@ const sum = function (array) {
   return sum;
 };
 
-const multiply = function () {};
+const multiply = function (array) {
+  let total = 1;
+  array.forEach((element) => {
+    total *= element;
+  });
+  return total;
+};
 
-const power = function () {};
+const power = function (base, exponent) {
+  return base ** exponent;
+};
 
-const factorial = function () {};
+const factorial = function (num) {
+  let factorial = num;
+  if (num === 0 || num === 1) return 1;
+  for (let i = num - 1; i >= 1; i--) {
+    factorial *= i;
+  }
+  return factorial;
+};
 
 // Do not edit below this line
 module.exports = {
